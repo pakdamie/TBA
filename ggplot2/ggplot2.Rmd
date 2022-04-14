@@ -18,6 +18,7 @@ conditions <- read.csv("data/conditions.csv")
 TIME_SERIES_FV <- time_series[,c(1,2)]
 Melt_Time_Series <- melt(time_series, id.vars= c("Week"))
 Melt_Cond_Series <- melt(conditions, id.vars= c("Conditions"))
+age_2 <- melt(age_data, id.vars = c('Age'))
 
 options(width = 10)
 knitr::opts_chunk$set(echo = FALSE)
